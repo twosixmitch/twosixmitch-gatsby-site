@@ -128,5 +128,16 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": "src/components",
+          "@images": "src/images",
+          "@styles": "src/assets/scss",
+        },
+        extensions: []
+      }
+    }
   ]
 };

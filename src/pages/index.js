@@ -1,11 +1,11 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
-import LatestPosts from "../components/LatestPosts"
+import Layout from '@components/Layout'
+import Page from '@components/Page'
+import LatestPosts from '@components/LatestPosts'
 import { StaticImage } from "gatsby-plugin-image"
-import Page from "../components/Page/Page";
+
 import * as styles from './index.module.scss';
 
 export default function IndexPage ({ data }) {

@@ -2,8 +2,8 @@
  * Blog
  */
 
-@import '../assets/scss/variables';
-@import '../assets/scss/mixins';
+ @import "@styles/base/variables";
+ @import '@styles/base/mixins';
 
 .blog-header {
   margin-top: 1.5rem;

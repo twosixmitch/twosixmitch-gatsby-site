@@ -1,19 +1,15 @@
 @charset "UTF-8";
 
-// Configurations
+@import "base/variables";
 
-@import "variables";
-@import "mixins";
+// base
+@import "base/mixins";
+@import "base/normalize";
+@import "base/reset";
+@import "base/scaffolding";
+
+// Components
 @import "syntax-highlighting";
-
-// Resets
-
-@import "normalize";
-@import "reset";
-
-// Compoents
-
-@import "scaffolding";
 @import "grid";
 @import "helpers";
 @import "buttons";
@@ -30,4 +26,3 @@
 @import "gallery";
 @import "lightbox";
 @import "code";
-

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import instagram from '../../images/instagram.png';
-import github    from '../../images/github.png';
-import facebook  from '../../images/facebook.png';
-import youtube   from '../../images/youtube.png';
+import instagram from '@images/instagram.png';
+import github    from '@images/github.png';
+import facebook  from '@images/facebook.png';
+import youtube   from '@images/youtube.png';
 
 import * as styles from "./Footer.module.scss"
 

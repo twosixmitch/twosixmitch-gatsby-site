@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Seo from '../seo';
+import Seo from '../Seo';
 import Helmet from 'react-helmet'
 import config from '../../utils/config'
 

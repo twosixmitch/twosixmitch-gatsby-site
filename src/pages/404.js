@@ -1,10 +1,8 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 
-import Layout from "../components/layout/layout"
-import Page from "../components/Page/Page"
-import Seo from "../components/seo"
-import * as styles from './404.module.scss';
+import Layout from '@components/Layout'
+import Page from '@components/Page'
+import * as styles from './404.module.scss'
 
 export default function NotFoundPage ({ data, location }) {
 

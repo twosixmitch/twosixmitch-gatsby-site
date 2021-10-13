@@ -2,7 +2,8 @@
  * Footer
  */
 
-@import "../../assets/scss/variables";
+@import "@styles/base/variables";
+@import '@styles/base/mixins';
 
 footer {
   position   : absolute;

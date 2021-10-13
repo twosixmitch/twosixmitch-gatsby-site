@@ -1,7 +1,8 @@
-import React from "react"
-import Layout from '../components/Layout';
-import Page from "../components/page/Page";
-import * as styles from './blog.module.scss';
+import React from 'react'
+
+import Layout from '@components/Layout'
+import Page from '@components/Page'
+import * as styles from './blog.module.scss'
 
 export default function BlogIndex({ data }) {
 

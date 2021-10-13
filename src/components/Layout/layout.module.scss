@@ -2,8 +2,8 @@
  * Layout
  */
 
-@import '../../assets/scss/variables';
-@import '../../assets/scss/mixins';
+@import "@styles/base/variables";
+@import '@styles/base/mixins';
 
 .global__container {
   min-height: 100vh; /* will cover the 100% of viewport */
