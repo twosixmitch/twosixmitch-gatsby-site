@@ -1,0 +1,32 @@
+// 404 Page
+
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.missing__header {
+  margin-top: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    //display: flex;
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    //display: flex;
+    font-size: 1.25rem;
+  }
+}
+
+.missing__info {
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+  }
+}

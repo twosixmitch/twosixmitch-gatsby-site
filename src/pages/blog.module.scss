@@ -1,0 +1,57 @@
+/**
+ * Blog
+ */
+
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.blog-header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.blog-header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-header ul li {
+  display: block;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-header ul li a {
+  display: block;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  color: $brand-color-grey-dark;
+  border: none;
+  border-radius: 3px;
+  font-weight: normal;
+  background: $brand-color-grey-light;
+  white-space: nowrap;
+
+  .emoji {
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    background: darken($post-tags-bg-color, 10%);
+  }
+
+  &.active {
+    background: $brand-color-grey-dark;
+    color: white;
+  }
+}
+
+hide {
+  display: none;
+}

@@ -1,0 +1,193 @@
+/**
+ * Posts
+ */
+
+.whisper {
+  font-size: 75%;
+}
+
+article {
+  margin-bottom : 3em;
+}
+
+article header {
+  display        : flex;
+  flex-direction : row;
+  margin-top     : 2em;
+  margin-bottom  : 2em;
+}
+
+article header .graphic {
+  width     : $post-small-img-width;
+  height    : $post-small-img-height;
+  min-width : $post-small-img-width;
+  margin    : 0.25em 1em 0 0;
+  
+  img {
+    height : 100%;
+    width  : 100%;
+  }
+}
+
+article header .details .title {
+  margin  : 0 0 0.25em 0;
+  padding : 0;
+}
+
+article header .details .meta {
+  display        : flex;
+  flex-direction : row;
+  font-size      : 0.7rem;
+
+  .date {
+    margin-right : 0.4rem;
+    margin-top   : 0.1rem;
+  }
+
+  .read-time {
+    margin-right : 0.4rem;
+    margin-top   : 0.1rem;
+  }
+
+  .separator {
+    margin-right : 0.4rem;
+    margin-top   : 0.1rem;
+    font-weight  : bold;
+  }
+
+  .tags {
+    margin-left : 0.1rem;
+  }
+}
+
+.post-tag {
+  display        : block;
+  text-transform : capitalize;
+  padding-top    : 1px;
+  padding-bottom : 1px;
+
+  a {
+    background  : $post-tags-bg-color;
+    padding     : 0.25em 0.5em;
+    color       : $post-tags-font-color;
+    border      : none;
+    font-weight : 500;
+    border-radius  : 3px;
+
+    &:hover,
+    &:focus {
+      color      : black;
+      background : darken($post-tags-bg-color, 10%);
+    }
+  }
+}
+
+@include small-breakpoint {
+  article header .graphic  {
+    width     : $post-large-img-width;
+    height    : $post-large-img-height;
+    min-width : $post-large-img-width;
+  }
+}
+
+.post-img {
+  border: none;
+  // center
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    border: none;
+  }
+}
+
+/* Post Side Nav */
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 10px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+/* Anchor Links */
+
+.anchor {
+  position: absolute;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  visibility: hidden;
+  opacity: 0;
+  text-decoration: none;
+  border: none;
+}
+
+*:hover > .anchor {
+  visibility: visible;
+  opacity: 0.75;
+  transition: all 0.16s linear;
+}
+
+*:hover > .anchor:hover,
+*:hover > .anchor:focus {
+  opacity: 1;
+  text-decoration: none;
+  border: none;
+}
+
+/* Offsetting an html anchor to adjust for fixed header */
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
+  scroll-margin-top: 3.75em;
+}
+
+@include small-breakpoint {
+
+  .icon-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  h2[id],
+  h3[id],
+  h4[id],
+  h5[id],
+  h6[id] {
+    scroll-margin-top: 2.75em;
+  }
+}
+
+.note {
+  margin        : 0 0 1.5rem 0;
+  border        : 2px solid #68a9ff;
+  border-left   : 16px solid #68a9ff;
+  border-radius : 3px;
+  padding       : 1em 1em;
+}
+
+.warning {
+  margin        : 0 0 1.5rem 0;
+  border        : 2px solid #ff6d68;
+  border-left   : 16px solid #ff6d68;
+  border-radius : 3px;
+  padding       : 1em 1em;
+}

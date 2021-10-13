@@ -1,0 +1,14 @@
+/**
+ * Languages
+ */
+
+.container .alphabet {
+  padding: 0; 
+  margin: 1rem 0;
+}
+
+@include small-breakpoint {
+  .container .alphabet {
+    max-width: 90%; 
+  }
+}

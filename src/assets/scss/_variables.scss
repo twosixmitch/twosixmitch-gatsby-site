@@ -1,0 +1,304 @@
+/**
+ * Variables
+ *
+ * The majority of the configuration for the toolkit.
+ */
+
+//==============================================================================
+// Containers
+//==============================================================================
+
+$x-small                  : 720px                                      !default;
+$small                    : 800px                                      !default;
+$medium                   : 1200px                                     !default;
+$large                    : 1300px                                     !default;
+$content-width            : 850px                                      !default;
+
+//==============================================================================
+// Breakpoints
+//==============================================================================
+
+$mobile                   : $x-small                                   !default;
+$tablet                   : $small                                     !default;
+$desktop                  : $medium                                    !default;
+
+//==============================================================================
+// Global Colors
+//==============================================================================
+
+$brand-color-blue         : #4FA5C7                                  !default;
+$brand-color-yellow       : #FFD200                                  !default;
+$brand-color-white        : #FFFFFF                                  !default;
+$brand-color-purple       : #360099                                  !default;
+$brand-color-grey-light   : #ececec                                  !default;
+$brand-color-grey-norm    : #808080                                  !default;
+$brand-color-grey-dark    : #404040                                  !default;
+
+$brand-color-black        : #0000                                    !default;
+$brand-color-white        : white                                    !default;
+
+$background               : white                                    !default;
+$primary-color            : #4FA5C7                                  !default;
+$secondary-color          : #FFD200                                  !default;
+$accent-color             : #cdcdcd                                  !default;
+$alternate-background     : #fafafa                                  !default;
+$alternate-color          : #404040                                  !default;
+$link-color               : darken(#4FA5C7, 15%)                      !default;
+$link-hover-color         : darken(#4FA5C7, 15%)                      !default;
+$highlight                : #ffeea8                                  !default;
+$error                    : #D33C40                                  !default;
+$bq-border                : 16px solid #eeeeee                       !default;
+
+//==============================================================================
+// Typography
+//==============================================================================
+
+// Body
+$font-size                : 1.1rem                                     !default;
+$body-font-size           : 1rem                                       !default;
+$font-style               : normal                                     !default;
+$font-variant             : normal                                     !default;
+$font-weight              : normal                                     !default;
+$font-color               : $brand-color-grey-dark                     !default;
+$light-font-color         : rgba(0, 0, 0, 0.6)                       !default;
+$font-family              : -apple-system, 
+                            BlinkMacSystemFont, 
+                            Helvetica Neue, 
+                            Helvetica, 
+                            Arial, 
+                            sans-serif                                 !default;
+$line-height              : 1.5                                        !default;
+
+// Headings
+$heading-font-color       : $brand-color-grey-dark                     !default;
+$heading-font-weight      : 600                                        !default;
+$heading-font-family      : -apple-system, 
+                            BlinkMacSystemFont, 
+                            Helvetica Neue, 
+                            Helvetica, 
+                            Arial, 
+                            sans-serif                                 !default;
+$heading-line-height      : 1.2                                        !default;
+
+// Mobile heading font size
+$h1-mobile                : 1.5rem                                     !default;
+$h2-mobile                : 1.25rem                                    !default;
+$h3-mobile                : 1.1rem                                     !default;
+$h4-mobile                : 1rem                                       !default;
+$h5-mobile                : 1rem                                       !default;
+
+// Heading font size
+$h1                       : 2rem                                       !default;
+$h2                       : 1.75rem                                    !default;
+$h3                       : 1.5rem                                     !default;
+$h4                       : 1.25rem                                    !default;
+$h5                       : 1.1rem                                     !default;
+
+//==============================================================================
+// Spacing
+//==============================================================================
+
+$padding                  : 1rem                                       !default;
+$margins                  : 1.5rem                                     !default;
+$content-padding          : 60px 0                                     !default;
+$content-padding-mobile   : 30px 0                                     !default;
+
+//==============================================================================
+// Borders
+//==============================================================================
+
+$border-width             : 2px                                        !default;
+$border-style             : solid                                      !default;
+$border-color             : #dedede                                  !default;
+$border-radius            : 4px                                        !default;
+$borders                  : $border-width $border-style $border-color  !default;
+$box-shadow               : 3px 5px 20px rgba(0, 0, 0, 0.16)         !default;
+
+//==============================================================================
+// Buttons
+//==============================================================================
+
+$primary-hover            : lighten($primary-color, 33%)               !default;
+$button-background        : $primary-color                             !default;
+$button-background-hover  : darken($button-background, 10%)            !default;
+$button-color             : #ffffff                                  !default;
+$button-font-weight       : 600                                        !default;
+$button-font-family       : -apple-system, 
+                            BlinkMacSystemFont, 
+                            Helvetica Neue, 
+                            Helvetica, 
+                            Arial, 
+                            sans-serif                                 !default;
+$button-font-size         : 1rem                                       !default;
+$button-border-width      : 1px                                        !default;
+$button-border-style      : solid                                      !default;
+$button-border-color      : $button-background                         !default;
+$button-border-radius     : $border-radius                             !default;
+$button-text-transform    : none                                       !default;
+
+// Accent buttons
+$accent-button-background : $brand-color-yellow                        !default;
+$accent-button-color      : $brand-color-white                         !default;
+$accent-button-color-hover: $brand-color-white                         !default;
+
+// Muted Buttons
+$muted-border             : 1px solid $accent-color                    !default;
+$muted-border-hover       : 1px solid darken($accent-color, 30%)       !default;
+$muted-background         : transparent                                !default;
+$muted-background-hover   : transparent                                !default;
+$muted-color              : darken($accent-color, 50%)                 !default;
+$muted-color-hover        : darken($accent-color, 50%)                 !default;
+
+// Round Buttons
+$round-buttons            : 40px !default;
+
+//==============================================================================
+// Forms
+//==============================================================================
+
+$forms                    : ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$buttons                  : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$input-background         : transparent                                !default;
+$placeholder              : darken($accent-color, 20%)                 !default;
+$form-border              : 1px solid $border-color                    !default;
+$form-border-hover        : 1px solid darken($border-color, 10%)       !default;
+$form-border-focus        : 1px solid $link-color                      !default;
+
+//==============================================================================
+// Tables
+//==============================================================================
+
+$stripes                  : #f8f8f8                                  !default;
+$caption                  : #ababab                                  !default;
+
+//==============================================================================
+// Code
+//==============================================================================
+
+$code-color               : $brand-color-white                         !default;
+$code-color-inline        : $brand-color-purple                        !default;
+$code-size                : 16px                                       !default;
+$code-family              : Menlo, monospace                           !default;
+$code-box-shadow          : 3px 5px 20px rgba(0, 0, 0, 0.16)         !default;
+$code-border-radius       : 3px                                        !default;
+
+$code-color-background      : #272727                                !default;
+$code-color-comments        : #ffffff72                              !default;
+$code-color-punctuation     : #ffffff                                !default;
+
+$code-color-class           : #1296c2                                !default;
+$code-color-class-inherited : #1296c2                                !default;
+$code-color-function        : #ffc857ff                              !default;
+$code-color-keyword         : darken($code-color-class, 5%)            !default;
+$code-color-literal-string  : #f25f5cff                              !default;
+$code-color-literal-integer : #8ac926ff                              !default;
+$code-color-literal-boolean : #9257ff                                !default;
+
+$code-borders             : 2px solid $code-color-background           !default;
+
+/* SCSS HEX */
+$cg-red: #db3a34ff;
+$midnight-green-eagle-green: #084c61ff;
+$metallic-seaweed: #177e89ff;
+$maximum-yellow-red: #ffc857ff;
+$jet: #323031ff;
+
+
+/* SCSS HEX */
+$davys-grey: #50514fff;
+$fire-opal: #f25f5cff;
+$green-sheen: #70c1b3ff;
+$celadon-blue: #247ba0ff;
+$naples-yellow: #ffe066ff;
+
+/* Palette */
+$sizzling-red: #ff595eff;
+$yellow-green: #8ac926ff;
+$green-blue-crayola: #1982c4ff;
+$sunglow: #ffca3aff;
+$royal-purple: #6a4c93ff;
+
+
+/* SCSS HEX */
+$paradise-pink: #ee4266ff;
+$caribbean-green: #3bceacff;
+$go-green: #0ead69ff;
+$sunglow: #ffd23fff;
+$blue-violet-color-wheel: #540d6eff;
+
+
+/* SCSS HEX */
+$paradise-pink: #ef476fff;
+$caribbean-green: #06d6a0ff;
+$blue-ncs: #118ab2ff;
+$orange-yellow-crayola: #ffd166ff;
+$midnight-green-eagle-green: #073b4cff;
+
+
+
+/* SCSS HEX */
+$burnt-sienna: #e76f51ff;
+$persian-green: #2a9d8fff;
+$charcoal: #264653ff;
+$orange-yellow-crayola: #e9c46aff;
+$sandy-brown: #f4a261ff;
+
+
+/* old
+$code-color-background      : #2e2e2e !default;
+$code-color-class           : #ffd200 !default;
+$code-color-keyword         : #04b4ff !default;
+$code-color-punctuation     : #ffffff !default;
+$code-color-literal-string  : #d4518c !default;
+$code-color-literal-integer : #49c701 !default;
+$code-color-literal-boolean : #49c701 !default;
+$code-color-comments        : #ffffff72 !default;
+//*/
+
+
+//==============================================================================
+// Navigation
+//==============================================================================
+
+$nav-background            : $brand-color-white                        !default;
+$nav-height                : 65px                                      !default;
+$nav-width                 : 850px                                     !default;
+$nav-font-color            : $brand-color-grey-dark                    !default;
+$nav-font-color-hover      : black                                   !default;
+$nav-font-color-alt        : $brand-color-grey-dark                    !default;
+$nav-font-color-alt-hover  : black                                   !default;
+$nav-font-weight           : 500                                       !default;
+$nav-font-size             : 1.25em                                    !default;
+
+//==============================================================================
+// Footer
+//==============================================================================
+
+$footer-background         : $brand-color-grey-light                   !default;
+$footer-height             : 65px                                      !default;
+$footer-width              : 850px                                     !default;
+$footer-font-color         : $brand-color-grey-norm                    !default;
+
+//==============================================================================
+// Post cards
+//==============================================================================
+
+$post-small-img-height      : 64px                                     !default;
+$post-small-img-width       : 64px                                     !default;
+$post-large-img-height      : 128px                                    !default;
+$post-large-img-width       : 128px                                    !default;
+$post-tags-bg-color         : $brand-color-grey-light                  !default;
+$post-tags-font-color       : $brand-color-grey-dark                   !default;
+$post-tags-font-color-hover : $brand-color-black                       !default;
+$post-tags-border           : 1px solid $post-tags-bg-color            !default;
+$post-tags-radius           : 3px                                      !default;
+
+//==============================================================================
+// Tooltips
+//==============================================================================
+
+$tipped_color          : $brand-color-blue                             !default;
+$tooltip_color         : $brand-color-grey-dark                        !default;
+$tooltip_font_color    : $brand-color-white                            !default;
+$tooltip_border_radius : 3px                                           !default;
+$arrow_border_width    : 8px                                           !default;

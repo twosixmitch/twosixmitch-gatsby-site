@@ -1,0 +1,67 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+ nav {
+  position   : fixed;
+  width      : 100%;
+  top        : 0;
+  left       : 0;
+  z-index    : 3;
+  background : $nav-background;
+  transition : all 0.3s ease;
+
+  &.scroll {
+    box-shadow: 3px 2px 18px rgba(0, 0, 0, 0.1);
+  }
+}
+
+nav .container {
+  padding         : 0 1.5rem;
+  height          : $nav-height;
+  max-width       : $nav-width;
+  margin          : auto;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+  transition      : height 0.3s ease;
+}
+
+nav .container .brand a {
+  color       : $nav-font-color;
+  font-size   : $nav-font-size;
+  font-weight : $nav-font-weight;
+  border      : none;
+
+  &:hover,
+  &:focus {
+    color : $nav-font-color-hover;
+  }
+}
+
+nav .container .links {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-end;
+  flex            : 1;
+  margin          : 0;
+
+  a {
+    padding-bottom : 0em;
+    padding-left   : 0.5em;
+    color          : $nav-font-color-alt;
+    font-size      : $nav-font-size;
+    font-weight    : $nav-font-weight;
+    border         : none;
+
+    &:hover,
+    &:focus {
+      color : $nav-font-color-alt-hover;
+    }
+  }
+}
+
+@include small-breakpoint {
+  nav .container .links a {
+    padding-left : 1em;
+  }
+}

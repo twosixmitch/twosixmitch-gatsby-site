@@ -1,0 +1,31 @@
+/**
+ * Footer
+ */
+
+@import "../../assets/scss/variables";
+
+footer {
+  position   : absolute;
+  bottom     : 0;
+  width      : 100%;
+  height     : $footer-height;
+  background : $footer-background;
+
+  .links {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    
+    a {
+      padding      : 1rem 0.5rem 1rem 0.5rem;
+      margin-left  : 1rem;
+      margin-right : 1rem;
+      border       : none;
+
+      img {
+        max-width : 24px;
+      }
+    }
+  }
+}

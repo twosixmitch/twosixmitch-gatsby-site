@@ -1,0 +1,30 @@
+/**
+ * SVG
+ */
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.content-svg {
+  text-decoration: none;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    border: none;
+  }
+}

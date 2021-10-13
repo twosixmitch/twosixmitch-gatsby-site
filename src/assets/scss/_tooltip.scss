@@ -1,0 +1,114 @@
+/**
+ * Tooltip
+ */
+
+/*tipped element. should be inline-block or block*/
+.qtip {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: $tipped_color;
+  border-bottom: 0.05em dashed $tipped_color;
+  box-sizing: border-box;
+  font-style: normal;
+}
+.qtip:hover {
+  color:darken($tipped_color, 10%);
+  border-bottom: 0.05em dashed darken($tipped_color, 10%);
+}
+
+/*the tip*/
+.qtip:before {
+  content: attr(info);
+  position: absolute;
+  background: $tooltip_color;
+  color: $tooltip_font_color;
+  line-height: 1.2em;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  min-width: 120px;
+  max-width: 500px;
+  text-align: center;
+  visibility: hidden;
+  z-index:999;
+  white-space: pre-wrap;
+}
+.qtip:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: '';
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.qtip:hover:before,
+.qtip:hover:after {
+  visibility: visible;
+  opacity: 1;
+  z-index:999;
+}
+
+/*top*/
+.qtip.top:before {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 8px));
+  box-sizing: border-box;
+  border-radius: $tooltip_border_radius;
+}
+.qtip.top:after {
+  border-width: $arrow_border_width $arrow_border_width 0 $arrow_border_width;
+  border-color: $tooltip_color transparent transparent transparent;
+  top: -$arrow_border_width;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/*bottom*/
+.qtip.bottom:before {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 8px));
+  box-sizing: border-box;
+  border-radius: $tooltip_border_radius;
+}
+.qtip.bottom:after {
+  border-width: 0 $arrow_border_width $arrow_border_width $arrow_border_width;
+  border-color: transparent transparent $tooltip_color transparent;
+  bottom: -$arrow_border_width;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/*left*/
+.qtip.left:before {
+  left: 0;
+  top: 50%;
+  transform: translate(calc(-100% - 8px), -50%);
+  box-sizing: border-box;
+  border-radius: $tooltip_border_radius;
+}
+.qtip.left:after {
+  border-width: $arrow_border_width 0 $arrow_border_width $arrow_border_width;
+  border-color: transparent transparent transparent $tooltip_color;
+  left: -$arrow_border_width;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+/*right*/
+.qtip.right:before {
+  right: 0;
+  top: 50%;
+  transform: translate(calc(100% + 8px), -50%);
+  box-sizing: border-box;
+  border-radius: $tooltip_border_radius;
+}
+.qtip.right:after {
+  border-width: $arrow_border_width $arrow_border_width $arrow_border_width 0;
+  border-color: transparent $tooltip_color transparent transparent;
+  right: -$arrow_border_width;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* -------------------- */
+

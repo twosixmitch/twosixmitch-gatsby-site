@@ -1,0 +1,22 @@
+/**
+ * Projects
+ */
+
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.projects {
+  background-color: aquamarine;
+}
+
+.project-card-container {
+  display         : flex;
+  flex-direction  : row;
+  align-content   : center;
+  justify-content : center;
+}
+
+.project-card a {
+  text-decoration: none;
+  border: none;
+}

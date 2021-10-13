@@ -1,0 +1,167 @@
+/**
+ * Helpers
+ */
+
+// Classic clearfix 
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+// Text alignment
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// Display
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+// Vertical center
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Responsive images
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+// Max sizes
+.max-width-100 {
+  max-width: 100px;
+}
+
+.max-width-200 {
+  max-width: 200px;
+}
+
+.max-width-300 {
+  max-width: 300px;
+}
+
+.max-width-400 {
+  max-width: 400px;
+}
+
+.max-width-500 {
+  max-width: 500px;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+// Display State
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// Floats
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+// Padding
+.no-padding-top {
+  padding-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+// Margins
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.margin-top {
+  margin-top: $margins;
+}
+
+.margin-bottom {
+  margin-bottom: $margins;
+}
+
+.margin-bottom-half {
+  margin-bottom: 0.5em;
+}
+
+// Backgrounds
+.alternate-background {
+  background: $alternate-background;
+  color: $alternate-color;
+}
+
+// Screen reader text for accessibility
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

@@ -1,0 +1,101 @@
+/**
+ * Postcards
+ */
+
+.posts-container {
+  display         : flex;
+  flex-direction  : column;
+  align-content   : center;
+  justify-content : center;
+}
+
+.posts-container .post-card {
+  padding-right  : 0em;
+  margin         : 0em 0 1em 0;
+  display        : flex;
+  flex-direction : row;
+  max-width      : 100%;
+}
+
+.posts-container .post-card .graphic {
+  margin     : 0.25em 1em 0 0;          
+  height     : $post-small-img-height;
+  width      : $post-small-img-width;
+  min-width  : $post-small-img-width;
+  min-height : $post-small-img-height;
+
+  a {
+    border: none;          
+    &:hover,
+    &:active,
+    &:focus {
+        border: none;
+    }
+  }
+
+  img {
+    height : 100%;
+    width  : 100%;
+  }
+}
+
+.posts-container .post-card .details .title {
+  margin : 0 0 0.25em 0;
+
+  a {
+    color  : $brand-color-grey-dark;
+    border : none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color : black;
+    }
+  }
+}
+
+.posts-container .post-card .details .meta {
+  display        : flex;
+  flex-direction : row;
+  font-size      : 0.7em;
+  
+  .date {
+    margin-right : 0.4em;
+    margin-top   : 0.1em;
+  }
+
+  .read-time {
+    margin-right : 0.4em;
+    margin-top   : 0.1em;
+  }
+
+  .separator {
+    margin-right : 0.4em;
+    margin-top   : 0.1em;
+    font-weight  : bold;
+  }
+
+  .tags {
+    margin-left : 0.1rem;
+  }
+}
+
+.posts-container .post-card .details .excerpt {
+  display : none;
+}
+
+@include small-breakpoint {
+  .posts-container .post-card .graphic {
+    height     : $post-large-img-height;
+    width      : $post-large-img-width;
+    min-width  : $post-large-img-width;
+    min-height : $post-large-img-height;
+  }
+
+  .posts-container .post-card .details .excerpt {
+    display     : block;
+    margin      : 0.25em 0 0 0;
+    font-size   : 1em;
+    line-height : 1.25em;
+  }
+}

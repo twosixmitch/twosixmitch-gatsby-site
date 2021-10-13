@@ -1,0 +1,197 @@
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+ // Keyboard input
+kbd {
+  background-color : #f7f7f7;
+  border           : 1px solid #ccc;
+  border-radius    : 3px;
+  box-shadow       : 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color            : #333;
+  display          : inline-block;
+  font-family      : Helvetica, Arial, sans-serif;
+  font-size        : 13px;
+  line-height      : 1.4;
+  margin           : 0 .1em;
+  padding          : .1em .6em;
+  text-shadow      : 0 1px 0 #fff;
+}
+
+// Code block styling
+pre {
+  border        : 0;
+  border-radius : $border-radius;
+  background    : $code-color-background;
+  padding       : 1rem;
+  tab-size      : 2;
+  color         : $code-color;
+  font-family   : $code-family;
+  font-size     : $code-size;
+  margin        : 0 0 $margins 0;
+  border-radius : 3px;
+
+  code {
+    font-family: $code-family;
+    line-height: 1.6;
+  }
+}
+
+// Inline code styling
+:not(pre)>code {
+  color         : $code-color-inline;
+  font-family   : $code-family;
+  font-size     : $code-size;
+  padding       : 0 0.1rem;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+   white-space  : pre;
+   word-spacing : normal;
+   word-break   : normal;
+   word-wrap    : normal;
+
+   -moz-tab-size : 2;
+   -o-tab-size   : 2;
+   tab-size      : 2;
+
+   -webkit-hyphens : none;
+   -moz-hyphens    : none;
+   -ms-hyphens     : none;
+   hyphens         : none;
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow : none;
+  }
+}
+
+// Syntax highlighting
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.entity,
+.token.url,
+.token.regex,
+.token.important,
+.token.variable,
+.language-css .token.string,
+.style .token.string {
+  color: $code-color-punctuation;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $code-color-comments;
+}
+
+.token.operator,
+.token.punctuation {
+  color: $code-color-punctuation;
+}
+
+.token.property,
+.token.tag,
+.token.symbol,
+.token.deleted,
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: $code-color-keyword;
+}
+
+.token.selector,
+.token.attr-name,
+.token.builtin,
+.token.inserted,
+.token.number,
+.token.constant {
+  color: $code-color-literal-integer;
+}
+
+.token.boolean {
+  color: $code-color-literal-boolean;
+}
+
+.token.string,
+.token.char {
+  color: $code-color-literal-string;
+}
+
+.token.interpolation {
+  color: #fff;
+
+  .token.punctuation {
+    color: #d1d1d1b7;
+  }
+}
+
+.token.function{
+  color: $code-color-function;
+}
+
+.token.class-name {
+  color: $code-color-class;
+}
+
+.token.type-list {
+  .token.class-name{
+    color: $code-color-class-inherited;
+  }
+}
+
+// Filename headers
+
+.filename {
+  padding: 0.5rem 1rem 0.75rem;
+  
+  margin-bottom: -0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: $code-family;
+  font-size: $code-size;
+  line-height: 1.8;
+  
+  background-color: black;
+  
+  z-index: 1;
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  a {
+    color: white;
+    border: none;
+  }
+
+  img {
+    max-width: 16px;
+  }
+
+  p {
+    display: inline;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid white;
+    }
+  }
+}

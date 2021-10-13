@@ -1,0 +1,24 @@
+/**
+ * Layout
+ */
+
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.global__container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-top: $nav-height;
+  padding-bottom: $footer-height; /* height of your footer */
+}
+
+iframe {
+  margin-bottom: 0;
+}
+
+::selection {
+  background: rgba(118, 234, 255, 0.8);
+  color: #111;
+}

@@ -1,0 +1,20 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.comingSoon {
+  text-align : center;
+  font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color      : $heading-font-color;
+  padding-top: 4em;
+
+  &__icon {
+    font-size: $h2 * 2;
+    padding-bottom: 0.5em;
+  }
+
+  &__text {
+    font-size: $h2;
+  }
+}
