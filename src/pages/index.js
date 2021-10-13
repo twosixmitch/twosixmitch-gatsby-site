@@ -14,8 +14,8 @@ export default function IndexPage ({ data }) {
 
   return (
     <Page title="Home">
-      <header>
-        <div class="profile-intro">
+      <div className={styles.profile}>
+        <div class={styles.profile__title}>
           <StaticImage
             className="bio-avatar"
             layout="fixed"
@@ -25,19 +25,19 @@ export default function IndexPage ({ data }) {
             height={150}
             quality={95}
             alt="Profile picture" />
-          <h1>Welcome Im Mitch</h1>
+          <h1>Welcome!<br />I'm Mitch</h1>
         </div>
-        <div class="profile-bio">
+        <div class={styles.profile__bio}>
           <p>I am a software developer born and raised in New Zealand.</p>
-          <p>I created this website to talk about things I know and some things I dont.</p>
+          <p>I created this website to talk about things I know and some things I don't.</p>
         </div>
-      </header>
+      </div>
       <section class="section latest-posts">
         <h2>Latest posts</h2>
         <div class="posts-container">
           <LatestPosts posts={posts}/>
         </div>
-        <div class="view-more">
+        <div class={styles.viewMore}>
           <a class="tag-button" href="/blog">View all</a>
         </div>
       </section> 
