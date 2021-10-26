@@ -41,7 +41,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
